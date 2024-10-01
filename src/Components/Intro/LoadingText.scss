@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+ 
+
+$glow: rgb(255, 255, 255);
+$glow-font: rgba(0, 255, 13, 0.7);
+$glow-bounce: rgb(80, 175, 252);
+$glass: rgb(13, 108, 243);
+$dur: 4.5s;
+
+@mixin on-state() {
+    color: $glow-bounce;
+    -webkit-text-stroke-color: $glow;
+    text-shadow: 0 0 80px $glow, 0 0 40px $glow;
+}
+
+@mixin super-on-state() {
+    color: $glow-font;
+    -webkit-text-stroke-color: $glow;
+    text-shadow: 0 0 400px $glow, 0 0 100px $glow, 0 0 80px $glow, 0 0 40px $glow;
+}
+
+@mixin off-state() {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: $glass;
+    text-shadow: none;
+}
+
+@mixin animation-timing($order) {
+    animation-delay: $order * 0.25s;
+    animation-duration: $dur;
+}
+
+@mixin animation-common() {
+    0% {
+        @include off-state();
+    }
+
+    10% {
+        @include off-state();
+    }
+    10.8% {
+        @include on-state();
+    }
+    10.81% {
+        @include off-state();
+    }
+    16.1% {
+        @include on-state();
+    }
+    16.2% {
+        @include off-state();
+    }
+    24.2% {
+        @include on-state();
+    }
+    24.3% {
+        @include off-state();
+    }
+    32.3% {
+        @include on-state();
+    }
+}
+
+// Define keyframes for each letter
+@keyframes flicker {
+    @include animation-common();
+    100% {
+        @include on-state();
+    }
+}
+
+#content {
+    position: absolute;
+    top: 1%;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 5vw;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        position: relative;
+         
+        width: 3.5vw;
+        height: 5vw;
+        list-style: none;
+        font-family: 'Varela Round';
+        font-weight: bolder;
+        font-size: 5vw;
+        color: black;
+        -webkit-text-stroke-width: 0.045vw;
+        -webkit-text-stroke-color: $glass;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-name: flicker;
+    }
+
+    li:nth-child(1) {
+        @include animation-timing(0);
+    }
+    li:nth-child(2) {
+        @include animation-timing(1);
+    }
+    li:nth-child(3) {
+        @include animation-timing(2);
+    }
+    li:nth-child(4) {
+        @include animation-timing(3);
+    }
+    li:nth-child(5) {
+        @include animation-timing(4);
+    }
+    li:nth-child(6) {
+        @include animation-timing(5);
+    }
+    li:nth-child(7) {
+        @include animation-timing(6);
+    }
+    li:nth-child(8) {
+        @include animation-timing(7);
+    }
+    li:nth-child(9) {
+        @include animation-timing(8);
+    }
+    li:nth-child(10) {
+        @include animation-timing(9);
+    }
+    li:nth-child(11) {
+        @include animation-timing(10);
+    }
+}

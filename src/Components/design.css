@@ -1,0 +1,18 @@
+.design{
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    align-items: center;
+    justify-content: space-evenly;
+     width: 15rem;
+    height: 22rem;
+    margin: 0.5rem;
+    background: rgba(255, 255, 255, 0.26);
+    border: 7px solid var(--blueCard);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+}
+.divs{
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    padding: 0.5rem;
+}

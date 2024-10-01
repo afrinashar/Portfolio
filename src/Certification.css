@@ -1,0 +1,95 @@
+/* General Styles */
+.certification-container {
+    padding: 2rem;
+    background-color: #f4f4f9;
+  }
+  
+  .title {
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .certification-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Three cards per row */
+    gap: 2rem;  /* Space between the cards */
+  }
+  
+  .certification-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .certification-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .certificate-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+  
+  .certificate-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .certificate-link:hover {
+    color: #0056b3;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .certification-grid {
+      grid-template-columns: repeat(2, 1fr);  /* Two cards per row for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .certification-grid {
+      grid-template-columns: 1fr;  /* One card per row for small screens */
+    }
+  }
+  
+  /* Sticky Button Styles */
+  .sticky-button-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;  /* Ensure it's always on top */
+  }
+  
+  .sticky-button {
+    background-color: #ffffff;
+    color: rgb(0, 94, 209);
+    border: 0.5px dotted rgb(0, 0, 184);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .sticky-button:hover {
+    background-color: #0110b7;
+    color: #f4f4f9;
+  }
+  
+  /* Additional Hover Effects */
+  .sticky-button:active {
+    background-color: #0077ff;
+  }
+  

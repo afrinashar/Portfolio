@@ -1,0 +1,224 @@
+.intro{
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+}
+.i-left{
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+.i-name{
+    display: flex;
+    flex-direction: column;
+}
+.i-name>:nth-child(1)
+{
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+.i-name>:nth-child(2)
+{
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.i-name>:nth-child(3)
+{
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.i-button{
+    width: 6rem;
+    height: 2rem;
+}
+.i-buttons{
+    width: 8rem;
+    height: 2rem;
+}
+.i-icons{
+    margin-top: 3rem;
+    display: flex;
+    gap: 0;
+}
+.i-icons>*{
+    transform: scale(0.5);
+}
+.i-icons>*:hover{
+    cursor: pointer;
+}
+.i-icons>img{
+    height: 100px;
+}
+.imgs{
+    height: 60px;
+}
+.i-right{
+    flex: 1;
+    position: relative;
+}
+.i-right>*{
+    position: absolute;
+    z-index: 1;
+}
+.i-right>:nth-child(1)
+{
+    transform: scale(0.69);
+    left: -15%;
+    top: -9%;
+}
+.i-right>:nth-child(2)
+{
+    transform: scale(0.67);
+    top: -4.6rem;
+    left: -3rem;
+}
+.i-right>:nth-child(3)
+{
+    transform: scale(1.4);
+    left: 28%;
+}
+.i-right>:nth-child(4)
+{
+    transform: scale(0.6);
+    top: -19%;
+    left: -24%;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+}
+
+@media screen and (max-width: 480px){
+    .intro{
+        flex-direction: column;
+        height: 66rem;
+        gap: 7rem;
+    }
+    .i-right{
+        transform: scale(0.8);
+        left: -3rem;
+    }
+    .i-right .blur{
+        display: none;
+    }
+    .floating-div:nth-of-type(1){
+        top: -7rem !important;
+    }
+}
+
+
+
+.image-container {
+    display: inline-block;
+justify-content: space-between;
+    overflow: hidden;
+    padding: 7px;
+    position: relative;
+
+}
+
+.colored-image {
+    border-radius: 50%;
+     width: 100px;
+    height: auto;
+    margin-left: 5px;
+    filter: grayscale(100%); /* Converts the image to grayscale */
+    transition: filter 1.3s; /* Smooth transition on hover */
+}
+
+.colored-image:hover {
+    filter: grayscale(10%); 
+     color: rgb(30, 0, 255);
+    border: blue 5px solid;/* Removes the grayscale on hover */
+}
+.colored-imageg {
+    border-radius: 50%;
+     width: 100px;
+      height: auto;
+      margin: 5px;
+      border: rgb(255, 255, 255) 5px solid;
+      background-color: #016e27;
+       text-shadow: 0 0 5px #ffee10;
+    transition: filter 0.3s; /* Smooth transition on hover */
+}
+
+.colored-imageg:hover {
+    filter: grayscale(0%); 
+     color: rgb(2, 99, 31);
+     background-color: none;
+    border: rgb(255, 255, 255) 5px solid;
+    box-shadow: 0 0 28px #016e27;
+    text-shadow: 0 0 5px #ffee10
+    /* Removes the      box-shadow: 0 0 28px #ff9900;
+ grayscale on hover */
+}
+.colored-imagel{
+    border-radius: 50%;
+     width: 100px;
+    height: auto;
+    margin: 5px;
+    background-color: rgb(0, 0, 0);
+   border: rgb(255, 146, 12) 5px solid; /* Converts the image to grayscale */
+    transition: filter 0.3s; /* Smooth transition on hover */
+}
+.colored-imagel:hover {
+    text-shadow: 0 0 5px #ffee10;
+    filter: grayscale(0%); 
+     color: rgb(255, 217, 0);
+      background-color: rgb(0, 0, 0);
+      box-shadow: 0 0 28px #ff9900;
+    border: rgb(255, 146, 12) 5px solid;/* Removes the grayscale on hover */
+}
+.colored-imageb{
+    border-radius: 50%;
+     width: 100px;
+    height: auto;
+  margin: 5px;
+    background-color: rgb(255, 255, 255);
+     border: rgba(30, 112, 179, 0.788) 5px solid;
+    /* Converts the image to grayscale */
+    transition: filter 0.3s; /* Smooth transition on hover */
+}
+.colored-imageb:hover {
+    /* text-shadow: 0 0 5px #ffee10;
+    filter: grayscale(0%); 
+     color: rgb(255, 217, 0); */
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 28px rgba(30, 112, 179, 0.788) ;
+    border: rgba(30, 112, 179, 0.788) 5px solid;/* Removes the grayscale on hover */
+}
+.colored-imager{
+    border-radius: 50%;
+    padding: 11px;
+     width: 100px;
+    height: auto;
+    background-color: rgb(2, 24, 114);
+   border: rgb(255, 255, 255) 5px solid; /* Converts the image to grayscale */
+    transition: filter 0.3s; /* Smooth transition on hover */
+}
+.colored-imager:hover {
+    text-shadow: 0 0 5px #ffee10;
+    filter: grayscale(0%); 
+     color: rgb(255, 217, 0);
+      background-color: rgb(2, 24, 114);
+      box-shadow: 0 0 28px #002486;
+    border: rgb(255, 255, 255) 5px solid;/* Removes the grayscale on hover */
+}
