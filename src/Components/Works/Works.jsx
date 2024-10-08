@@ -8,6 +8,7 @@ import Shopify from "../../img/zero.jpg";
 import { themeContext } from '../../Context'
 import { useContext } from "react";
 import {motion} from 'framer-motion'
+import {Link} from 'react-scroll'
 
 const Works = () => {
     const theme = useContext(themeContext);
@@ -27,7 +28,8 @@ const Works = () => {
                 Collaboration and Communication: Effective communication skills  <br/>for collaborating with designers, stakeholders, and team members.
                 <br/>
                 Quality Assurance: Performing thorough testing <br/> to identify and resolve bugs and ensure high-quality deliverables.            </span>
-           <button className="button s-button">Hire me</button>
+           <Link spy={true} to='Contact' smooth={true} activeClass='activeClass'> <button className=" button i-button">Contact </button>
+           </Link>
             <div className="blur s-blur1" style={{background: "#ABF1FF94"}}></div>
         </div>
 

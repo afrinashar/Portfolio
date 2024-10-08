@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-no-duplicate-props */
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Intro.css";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
@@ -63,7 +64,8 @@ const Intro = () => {
             understanding of LLM, AI/ML, and Python.
           </span>
         </div>
-        <button className=" button i-button">Hire me</button>
+        <Link to="projects"  > <button className="button s-button">Projects</button></Link>
+        
      <div className="i-icons">
         <div className="image-container">
          

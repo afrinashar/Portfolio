@@ -13,7 +13,7 @@
 .c-right>form{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
 }
 .c-right .user{
@@ -43,4 +43,12 @@ textarea{
     .c-right .user{
         width: 16rem;
     }
+}
+.labels{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.contact-form .button{
+    margin :15px;
 }
