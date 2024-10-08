@@ -1,11 +1,11 @@
 import React from 'react'
 import './Testimonials.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import profilePic1 from "../../img/c1.png";
-import profilePic2 from "../../img/c2.png";
-import profilePic3 from "../../img/c3.png";
-import profilePic4 from "../../img/c4.png";
-import c from "../../img/c0.png";
+import profilePic1 from "../../img/c0.jpeg";
+import profilePic2 from "../../img/c2.jpeg";
+import profilePic3 from "../../img/c3.jpeg";
+import profilePic4 from "../../img/c4.jpeg";
+import c from "../../img/c0.jpeg";
 
 import { Pagination } from 'swiper';
 import 'swiper/css/pagination';
@@ -17,23 +17,20 @@ const Testimonials = () => {
     const clients = [
         {
             img:c,
-            review:`   Freecodecamp  Frontend development`
+            review:`  Responsive Web Design`
             
         },
         {
             img: profilePic2,
-            review:`JavaScript 
-It covers topics like Design Patterns, Memory management, concurrency model, and event loops, among others.`
+            review:`Javascript Algorithms and Datastructure`
         },
         {
-            img:profilePic1,
-            review: `Problem Solving 
-It covers basic topics of Data Structures (such as Arrays, Strings) and Algorithms (such as Sorting and Searching).`
+            img:profilePic3,
+            review: `Frontend Development and Libraries`
         },
         {
             img: profilePic4,
-            review: `Rest API
-It covers topics like getting data from an API and process using parameters or paging.`
+            review: `React JS`
         },
     ]
 
@@ -64,7 +61,8 @@ It covers topics like getting data from an API and process using parameters or p
                     </SwiperSlide>
                 );
             })}
-        </Swiper><Link to="Certificate"><button className=" button i-button">
+        </Swiper>
+        <Link to="Certificate"><button className=" button i-button">
                    Certificates
                 </button> </Link> </div>
   );

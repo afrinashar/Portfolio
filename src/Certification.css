@@ -72,6 +72,7 @@
   }
   
   .sticky-button {
+    margin-top: 10px;
     background-color: #ffffff;
     color: rgb(0, 94, 209);
     border: 0.5px dotted rgb(0, 0, 184);
