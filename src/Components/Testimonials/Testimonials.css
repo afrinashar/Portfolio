@@ -45,7 +45,7 @@
     color: var(--gray);
 }
 .t-wrapper .swiper{
-    width: 50rem;
+    width: 10rem;
     height: 70%;
 }
 .t-wrapper .swiper-slide{
@@ -62,7 +62,7 @@
         padding: 0;
     }
     .testimonial>img{
-        width: 70px;
-        height: 70px;
+        width: 250px;
+        height: 150px;
     }
 }
