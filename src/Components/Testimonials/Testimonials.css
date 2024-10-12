@@ -45,7 +45,7 @@
     color: var(--gray);
 }
 .t-wrapper .swiper{
-    width: 10rem;
+    width: 25rem;
     height: 70%;
 }
 .t-wrapper .swiper-slide{
