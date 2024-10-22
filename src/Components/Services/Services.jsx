@@ -19,9 +19,9 @@ const Services = () => {
         <div className="awesome">
             <span style= {{color: darkMode? 'white': ''}}>My Awesome</span>
             <span>Services</span>
-            <span>As a seasoned MERN stack developer, I specialize in crafting robust web applications  <br/>that leverage MongoDB, Express.js, React.js, and Node.js.<br/> My services cater to diverse business needs, <br/> offering end-to-end solutions from conceptualization to deployment
+            <span>As a MERN stack developer, I specialize in crafting robust web applications  <br/>that leverage MongoDB, Express.js, React.js, and Node.js.<br/> My services cater to diverse business needs, <br/> offering end-to-end solutions from conceptualization to deployment
             </span>
-           <a href={Resume} download> <button className="button s-button">Download CV</button></a>
+           <a href={Resume} > <button className="button s-button">Download CV</button></a>
             <div className="blur s-blur1" style={{background: "#ABF1FF94"}}></div>
         </div>
         {/*right side*/}
