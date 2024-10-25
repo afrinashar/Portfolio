@@ -2,10 +2,12 @@ import React from "react";
 import gpt from "../img/gpt.mp4";
 import image from "../img/imageanalyze.mp4";
 import "./ProjectsAI.css"; // Import custom CSS for styling
-
+import { Link } from "react-router-dom";
 export const ProjectsAI = () => {
   return (
     <>
+            <Link to={-1} className=" btn btn-light sticky-button">Back</Link>
+
       <div className="projects-container">
         <section className="project-section">
           <h2 className="project-title">AI Image Analyzer</h2>
