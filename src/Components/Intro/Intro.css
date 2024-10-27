@@ -256,7 +256,7 @@ justify-content: space-between;
 .n-list > ul >li:hover{
     cursor: pointer;
     color: var(--orange);
-}
+} 
 n-button{
     width: 10px !important;
     flex: 2;
