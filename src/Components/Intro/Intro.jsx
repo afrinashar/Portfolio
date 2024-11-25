@@ -95,7 +95,7 @@ const Intro = () => {
       <div className="i-right">
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
-        <img width={240} src={Boy} alt="" />
+        <img width={230} className="me" src={Boy} alt="" />
         <motion.img
           className="imgs"
           initial={{ left: "50%", top: "59%" }}
@@ -112,8 +112,8 @@ const Intro = () => {
           src={ci}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
@@ -124,8 +124,8 @@ const Intro = () => {
           src={arith}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
@@ -136,20 +136,20 @@ const Intro = () => {
           src={jest}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
           className="imgs"
-          initial={{ left: "50%", top: "59%" }}
-          whileInView={{ left: "14%", top: "59%" }}
+          initial={{ left: "20%", top: "39%" }}
+          whileInView={{ left: "24%", top: "49%" }}
           transition={transition}
           src={git}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
@@ -160,8 +160,8 @@ const Intro = () => {
           src={html}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
@@ -172,8 +172,8 @@ const Intro = () => {
           src={jwt}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />{" "}
         <motion.img
@@ -184,8 +184,8 @@ const Intro = () => {
           src={css}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />{" "}
         <motion.img
@@ -196,20 +196,20 @@ const Intro = () => {
           src={py}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         /> 
         <motion.img
           className="imgs"
           initial={{ left: "50%", top: "59%" }}
-          whileInView={{ left: "40%", top: "20%" }}
+          whileInView={{ left: "30%", top: "15%" }}
           transition={transition}
           src={gpt}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         /> 
         <motion.img
@@ -217,23 +217,22 @@ const Intro = () => {
           initial={{ left: "50%", top: "59%" }}
           whileInView={{ left: "50%", top: "28%" }}
           transition={transition}
-          src={llm}
-          alt=""
+           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         /> 
         <motion.img
           className="imgs"
           initial={{ left: "50%", top: "59%" }}
-          whileInView={{ left: "34%", top: "31%" }}
+          whileInView={{ left: "34%", top: "51%" }}
           transition={transition}
           src={agil}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />{" "}
         <motion.img
@@ -244,8 +243,8 @@ const Intro = () => {
           src={bs}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
@@ -256,8 +255,8 @@ const Intro = () => {
           src={api}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
@@ -265,11 +264,11 @@ const Intro = () => {
           initial={{ left: "50%", top: "59%" }}
           whileInView={{ left: "64%", top: "39%" }}
           transition={transition}
-          src={css}
+          src={ts}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
@@ -280,8 +279,8 @@ const Intro = () => {
           src={react}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
@@ -292,20 +291,20 @@ const Intro = () => {
           src={db}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
           className="imgs"
-          initial={{ left: "50%", top: "49%" }}
-          whileInView={{left: "92%", top: "33%" }}
+          initial={{ left: "50%", top: "59%" }}
+          whileInView={{ left: "8%", top: "66%" }}
           transition={transition}
           src={tan}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
          <motion.img
@@ -316,8 +315,8 @@ const Intro = () => {
           src={socket}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
@@ -328,20 +327,20 @@ const Intro = () => {
           src={hug}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
           className="imgs"
           initial={{ left: "50%", top: "59%" }}
-          whileInView={{ left: "54%", top: "73%" }}
+          whileInView={{ left: "54%", top: "83%" }}
           transition={transition}
           src={js}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
@@ -352,20 +351,20 @@ const Intro = () => {
           src={npm}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
           className="imgs"
           initial={{ left: "50%", top: "59%" }}
-          whileInView={{ left: "60%", top: "59%" }}
+          whileInView={{ left: "64%", top: "55%" }}
           transition={transition}
-          src={ts}
+          src={llm}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
@@ -376,8 +375,8 @@ const Intro = () => {
           src={next}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
@@ -388,20 +387,20 @@ const Intro = () => {
           src={tail}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.img
           className="imgs"
           initial={{ left: "50%", top: "59%" }}
-          whileInView={{ left: "83%", top: "72%" }}
+          whileInView={{ left: "12%", top: "80%" }}
           transition={transition}
           src={vs}
           alt=""
           whileHover={{
-            scale: 1.1, // Increase size on hover
-            boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
+            scale: 1.2, // Increase size on hover
+            //boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)', // Add shadow on hover
           }}
         />
         <motion.div
@@ -416,8 +415,8 @@ const Intro = () => {
           <FloatingDiv image={Crown} txt1="Software" txt2="Developer" />
         </motion.div>
         <motion.div
-          initial={{ left: "9rem", top: "18rem" }}
-          whileInView={{ left: "0rem" }}
+          initial={{ left: "2rem", top: "18rem" }}
+          whileInView={{ left: "10rem" }}
           transition={transition}
           style={{ top: "18rem", left: "0rem" }}
           className="floating-div"

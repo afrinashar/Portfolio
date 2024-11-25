@@ -202,7 +202,8 @@ justify-content: space-between;
     filter: grayscale(0%); 
      color: rgb(255, 217, 0); */
       background-color: rgb(255, 255, 255);
-      box-shadow: 0 0 28px rgba(30, 112, 179, 0.788) ;
+      border-radius: 75%;
+      box-shadow: 0 0 28px rgba(30, 112, 179, 0.788)  ;
     border: rgba(30, 112, 179, 0.788) 5px solid;/* Removes the grayscale on hover */
 }
 .colored-imager{
@@ -269,4 +270,7 @@ n-button{
     .n-button{
         display: none;
     }
+}
+.me{
+    margin-right: 200px;
 }
