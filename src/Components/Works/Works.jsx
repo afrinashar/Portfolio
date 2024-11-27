@@ -17,6 +17,7 @@ const Works = () => {
     <div className="works">
 
         {/*left side */}
+        
 
          <div className="awesome">
             <span style= {{color: darkMode? 'white': ''}}>Works for All these</span>
