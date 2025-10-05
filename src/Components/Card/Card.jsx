@@ -4,14 +4,36 @@ import { Link } from "react-router-dom";
 
 const Card = ({ emoji, heading, detail, links }) => {
   return (
-    <div className="card">
-      <img src={emoji} alt="" />
-      <span>{heading}</span>
-      <span>{detail}</span>
-      <Link to={links} className="  ">
-        <button className=" button i-buttons">Projects</button>
+    <article
+      className="card"
+      aria-label={heading}
+      itemScope
+      itemType="https://schema.org/Service"
+    >
+      <header>
+        <img
+          src={emoji}
+          alt={heading + " icon"}
+          loading="lazy"
+          width={64}
+          height={64}
+          itemProp="image"
+        />
+        <h2 className="card-heading" itemProp="name">
+          {heading}
+        </h2>
+      </header>
+      <p className="card-detail" itemProp="description">
+        {detail}
+      </p>
+      <Link
+        to={links}
+        className="card-link"
+        aria-label={`View projects related to ${heading}`}
+      >
+        <button className="button i-buttons">View Projects</button>
       </Link>
-    </div>
+    </article>
   );
 };
 

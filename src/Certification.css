@@ -94,4 +94,6 @@
   .sticky-button:active {
     background-color: #0077ff;
   }
-  
+  .testimonial {
+    padding: 0px!important;
+  }

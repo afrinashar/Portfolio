@@ -80,11 +80,11 @@ $dur: 4.5s;
     transform: translateY(-50%);
     margin: 0 auto;
     text-align: center;
+    will-change: transform, opacity;
 
     li {
         display: inline-block;
         position: relative;
-         
         width: 3.5vw;
         height: 5vw;
         list-style: none;
@@ -97,6 +97,7 @@ $dur: 4.5s;
         animation-iteration-count: infinite;
         animation-fill-mode: forwards;
         animation-name: flicker;
+        aria-hidden: true;
     }
 
     li:nth-child(1) {

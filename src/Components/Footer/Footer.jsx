@@ -1,34 +1,49 @@
-import React from 'react'
-import './Footer.css'
+import './Footer.css';
 import video from '../../img/footer.mp4';
-
 import Github from '../../img/github.png';
 import LinkedIn from '../../img/linkedin.png';
 import Instagram from '../../img/leets.png';
 import geeks from '../../img/geeks.png';
-import Wave from '../../img/wave.png'
+import Wave from '../../img/wave.png';
 
 const Footer = () => {
   return (
-    <div className="Footer">
-   <video autoPlay loop muted width="100%">
+    <footer className="Footer" aria-label="Site Footer">
+      <video autoPlay loop muted width="100%" title="Footer background video">
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      {/* <img fill="white"  src={Wave} alt=""  style={{width: '100%' , color:"white", opacity:"25"}}/>
+      <img src={Wave} alt="Decorative wave" style={{ width: '100%', color: 'white', opacity: '0.25' }} loading="lazy" />
       <div className="f-content">
-        <span>afrinashar1@gmail.com</span>
-        <div className="f-icons">
-        <div className="i-icons">
-                    <img src={Github} alt="" />
-                    <a  src="https://www.linkedin.com/in/afrin-ashar/"><img src={LinkedIn} alt=""  width={100}/> </a>  
-                  <a  src="https://www.linkedin.com/in/afrin-ashar/">   <img src={Instagram} alt="" width={100}/></a> 
-                   <a  src="https://www.geeksforgeeks.org/user/afrina5rxx/"> <img src={geeks} alt="geek for Geeks" width={100} /></a>
-                </div>
-        </div>
-      </div> */}
-    </div>
-  )
-}
+        <h2 className="footer-heading">Contact</h2>
+        <a href="mailto:afrinashar1@gmail.com" className="footer-email">afrinashar1@gmail.com</a>
+        <nav className="f-icons" aria-label="Social Links">
+          <ul className="i-icons">
+            <li>
+              <a href="https://github.com/afrinashar" target="_blank" rel="noopener noreferrer" title="Github">
+                <img src={Github} alt="Github profile" width={100} loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/afrin-ashar/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                <img src={LinkedIn} alt="LinkedIn profile" width={100} loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a href="https://leetcode.com/afrinashar8/" target="_blank" rel="noopener noreferrer" title="LeetCode">
+                <img src={Instagram} alt="LeetCode profile" width={100} loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.geeksforgeeks.org/user/afrina5rxx/" target="_blank" rel="noopener noreferrer" title="GeeksforGeeks">
+                <img src={geeks} alt="GeeksforGeeks profile" width={100} loading="lazy" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

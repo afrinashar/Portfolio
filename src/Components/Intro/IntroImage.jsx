@@ -1,0 +1,41 @@
+// src/img/index.js
+ import LinkedIn from "../../img/linkedin.png"; import Github from "../../img/github.png"
+ import Instagram from "../../img/leets.png"; 
+ import geeks from "../../img/geeks.png"; import Vector1 from "../../img/Vector1.png"; import Vector2 from "../../img/Vector2.png"; import Boy from "../../img/me.png"; import Thumbup from "../../img/creative.png"; import Crown from "../../img/crown.png"; import Glassesimoji from "../../img/node.png"; import react from "../../img/react.png"; import js from "../../img//js.png"; import db from "../../img/db.png"; import html from "../../img/html.png"; import css from "../../img/css.png"; import html5 from "../../img/html5.png"; import ci from "../../img/ci.png"; import next from "../../img/next.png"; import agil from "../../img/agils.png"; import bs from "../../img/bs.png"; import api from "../../img/api.png"; import arith from "../../img/arith.png"; import css3 from "../../img/css3.png"; import git from "../../img/git.png"; import jest from "../../img/jest.png"; import jwt from "../../img/jwts.png"; import ts from "../../img/ts.png"; import tan from "../../img/tan.png"; import tail from "../../img/tail.png"; import vs from "../../img/vs.png"; import py from "../../img/py.png"; import gpt from "../../img/gpt4.png"; import llm from "../../img/llm.png"; import hug from "../../img/hug.png"; import socket from "../../img/socket.png";
+export {
+    Github,
+  LinkedIn,
+  Instagram,
+  geeks,
+  Vector1,
+  Vector2,
+  Boy,
+  Thumbup,
+  Crown,
+  Glassesimoji,
+  react,
+  js,
+  db,
+  html,
+  css,
+  html5,
+  ci,
+  next,
+  agil,
+  bs,
+  api,
+  arith,
+  css3,
+  git,
+  jest,
+  jwt,
+  ts,
+  tan,
+  tail,
+  vs,
+  py,
+  gpt,
+  llm,
+  hug,
+  socket
+};

@@ -1,60 +1,57 @@
-import { useEffect, useContext } from "react";
+import { useEffect, useContext, lazy, Suspense } from "react";
 import ReactGA from 'react-ga4';
+import { Helmet } from "react-helmet";
 import Navbar from "./Components/Navbar/Navbar";
-import Intro from "./Components/Intro/Intro";
-import './App.css'
-import Services from "./Components/Services/Services";
-import Experience from "./Components/Experience/Experience";
-import Works from "./Components/Works/Works";
-import Portfolio from "./Components/Portfolio/Portfolio";
-import Testimonials from "./Components/Testimonials/Testimonials";
-import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import { themeContext } from './Context';
-import Design from "./Components/Design";
 import { Route, Routes } from "react-router";
-import Dashboard from "./Dashboard";
-import Projects from "./Components/Projects";
-import Certification from "./Certification";
-import { Project } from "./Components/Project";
-import { ProjectsAI } from "./Components/ProjectsAI";
 import ChatBot from "react-chatbotify";
 import Chatbox from "./Components/Chatbox";
-import AllProjects from "./Components/AllProjects";
+
+// Lazy load route components for performance
+const Design = lazy(() => import("./Components/Design"));
+const Dashboard = lazy(() => import("./Dashboard"));
+const Projects = lazy(() => import("./Components/Projects"));
+const Certification = lazy(() => import("./Certification"));
+const Project = lazy(() => import("./Components/Project"));
+const ProjectsAI = lazy(() => import("./Components/ProjectsAI"));
+const AllProjects = lazy(() => import("./Components/AllProjects"));
 
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
-  // Initialize Google Analytics
   useEffect(() => {
-    // Replace 'G-XXXXXXXXXX' with your actual Google Analytics tracking ID
     ReactGA.initialize('G-GQ9XM82G0H');
-
-    // Track page views when the app loads or routes change
     ReactGA.send({ hitType: "pageview", page: window.location.pathname });
-
-    // Optionally, you can track specific events or page views as needed
-    // ReactGA.event({ category: 'User', action: 'Clicked Portfolio Section' });
   }, []);
 
   return (
-    <div className="App"
+    <main className="App"
       style={{
         background: darkMode ? 'black' : '',
         color: darkMode ? 'white' : ''
       }}
+      aria-label="Afrin Ashar Portfolio"
     >
-      <Routes>
-        <Route exact path="/design" element={<Design />} ></Route>
-        <Route exact path="/" element={<Dashboard />} ></Route>
-        <Route exact path="/certificate" element={<Certification />} ></Route>
-        <Route exact path="/fullstack" element={<Project />} ></Route>
-        <Route exact path="/frontend" element={<Projects />} ></Route>
-        <Route exact path="/AIprojects" element={<ProjectsAI />} ></Route>
-        <Route exact path="/projects" element={<AllProjects />} ></Route>
-      </Routes>
-    </div>
+      <Helmet>
+        <title>Afrin Ashar | MERN Stack Developer Portfolio</title>
+        <meta name="description" content="Portfolio of Afrin Ashar, MERN stack developer specializing in React, Node, Express, and MongoDB." />
+      </Helmet>
+      <Navbar />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route exact path="/design" element={<Design />} />
+          <Route exact path="/" element={<Dashboard />} />
+          <Route exact path="/certificate" element={<Certification />} />
+          <Route exact path="/fullstack" element={<Project />} />
+          <Route exact path="/frontend" element={<Projects />} />
+          <Route exact path="/AIprojects" element={<ProjectsAI />} />
+          <Route exact path="/projects" element={<AllProjects />} />
+        </Routes>
+      </Suspense>
+      <Footer />
+    </main>
   );
 }
 

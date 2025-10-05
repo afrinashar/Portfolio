@@ -1,22 +1,20 @@
 // LoadingText.js
 import React from 'react';
-import './LoadingText.scss'; // Change to .scss if using SCSS
+import './LoadingText.scss';
+
+const name = ['A', 'F', 'R', 'I', 'N', '', 'A', 'S', 'H', 'A', 'R'];
 
 const LoadingText = () => {
     return (
-        <ul id="content">
-            <li>A</li>
-            <li>F</li>
-            <li>R</li>
-            <li>I</li>
-            <li>N</li>
-            <li></li>
-            <li>A</li>
-            <li>S</li>
-            <li>H</li>
-            <li>A</li>
-            <li>R</li>
-        </ul>
+        <nav aria-label="Animated Name Loading">
+            <ul id="content" className="loading-text" itemScope itemType="https://schema.org/Person">
+                {name.map((char, idx) => (
+                    <li key={idx} aria-label={char ? char : 'space'} itemProp="name">
+                        {char}
+                    </li>
+                ))}
+            </ul>
+        </nav>
     );
 };
 

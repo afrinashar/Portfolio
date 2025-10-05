@@ -273,4 +273,10 @@ n-button{
 }
 .me{
     margin-right: 200px;
+     
+     border-radius: 10%;
 }
+ 
+.me:hover {
+    color: #111;
+ }

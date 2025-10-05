@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';  // For navigation
+import { useNavigate } from 'react-router-dom';
 import ChatBot from "react-chatbotify";
-import './Chatbox.css';  // Import the styles
+import './Chatbox.css';
 
 const Chatbox = ({ onOptionClick }) => {
   const [messages, setMessages] = useState([]);
@@ -13,29 +13,28 @@ const Chatbox = ({ onOptionClick }) => {
       setMessages([...newMessages, { from: 'bot', text: 'Here are some projects I have worked on: Project A, Project B, etc.' }]);
       setShowOptions(false);
     } else {
-      onOptionClick(option);  // Handle navigation via parent
+      onOptionClick(option);
     }
   };
 
   return (
-    <div className="chatbox">
-      <div className="messages">
+    <section className="chatbox" aria-label="Chatbot">
+      <div className="messages" aria-live="polite">
         {messages.map((msg, i) => (
           <div key={i} className={`message ${msg.from}`}>
             {msg.text}
           </div>
         ))}
       </div>
-
       {showOptions && (
-        <div className="options">
-          <button onClick={() => handleOptionClick('Projects')}>Projects</button>
-          <button onClick={() => handleOptionClick('Experience')}>Experience</button>
-          <button onClick={() => handleOptionClick('Email')}>Email</button>
-          <button onClick={() => handleOptionClick('Call')}>Call</button>
-        </div>
+        <nav className="options" aria-label="Chatbot Options">
+          <button onClick={() => handleOptionClick('Projects')} aria-label="Show Projects">Projects</button>
+          <button onClick={() => handleOptionClick('Experience')} aria-label="Show Experience">Experience</button>
+          <button onClick={() => handleOptionClick('Email')} aria-label="Show Email">Email</button>
+          <button onClick={() => handleOptionClick('Call')} aria-label="Show Call">Call</button>
+        </nav>
       )}
-    </div>
+    </section>
   );
 };
 
@@ -74,9 +73,9 @@ const MyChatBot = () => {
   };
 
   return (
-    <div className="chatbox-container">
+    <main className="chatbox-container" aria-label="Chatbot Container">
       <ChatBot settings={settings} flow={flow} />
-    </div>
+    </main>
   );
 };
 
